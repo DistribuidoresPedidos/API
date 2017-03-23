@@ -24,6 +24,20 @@ gem 'puma', '~> 3.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+ 
+# gem 'rack-cors'
+
+gem 'will_paginate', '~> 3.1.0'
+
+#authentication
+gem 'devise_token_auth'
+gem 'devise'
+#autenticacion con face, github 
+gem 'omniauth'
+#diferentes sefmentos de red cross-domain 
+gem 'rack-cors', :require => 'rack/cors'
+
+#luego correr el comando rails g devise_token_auth:install [USER_CLASS] [MOUNT_PATH] User and Path 
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
