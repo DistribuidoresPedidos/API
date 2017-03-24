@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :order_products
   mount_devise_token_auth_for 'Distributor', at: 'distrib_path'
 
   mount_devise_token_auth_for 'Retailer', at: 'retai_path'
