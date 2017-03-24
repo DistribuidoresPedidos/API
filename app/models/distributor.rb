@@ -1,4 +1,9 @@
 class Distributor < ApplicationRecord
+
+  has_many :offeredProducts
+  has_many :products, :through => :offeredProducts
+
+
   # Include default devise modules.
   devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :trackable, :validatable,
