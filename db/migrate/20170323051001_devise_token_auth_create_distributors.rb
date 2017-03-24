@@ -34,13 +34,13 @@ class DeviseTokenAuthCreateDistributors < ActiveRecord::Migration[5.0]
       # t.datetime :locked_at
 
       ## User Info
-      t.string :name
-      t.string :nickname
-      t.string :image
+      t.string :name 
       t.string :email
-
+      t.string :phoneNumber
+      t.string :photo
+      
       ## Tokens
-      t.json :tokens
+      t.json :location
 
       t.timestamps
     end

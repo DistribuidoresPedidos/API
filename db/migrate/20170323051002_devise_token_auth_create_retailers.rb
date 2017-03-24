@@ -33,14 +33,16 @@ class DeviseTokenAuthCreateRetailers < ActiveRecord::Migration[5.0]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-      ## User Info
-      t.string :name
-      t.string :nickname
-      t.string :image
+      
+      t.string :name 
+      t.text :description
       t.string :email
-
+      t.string :phoneNumber
+      t.string :photo
+      
       ## Tokens
-      t.json :tokens
+      t.json :location
+
 
       t.timestamps
     end
